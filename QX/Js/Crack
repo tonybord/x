@@ -1,0 +1,7 @@
+hostname = note.ynooudao.com,cubox.pro
+
+
+# > 有道云笔记
+http-response https://note.youdao.com/yws/(mapi/payment|api/self) script-path=https://raw.githubusercontent.com/linuszlx/JS/main/Crack/ydybj.js, requires-body=true, timeout=10, tag=有道云笔记
+# > Cubox
+http-response ^https:\/\/cubox.pro\/c\/api\/userInfo script-path=https://raw.githubusercontent.com/linuszlx/JS/main/Crack/cubox.js, requires-body=true, timeout=10, tag=Cubox
